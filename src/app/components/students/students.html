@@ -1,0 +1,7 @@
+<h2>Students</h2>
+<ul>
+  <li *ngFor="let s of students">
+    {{ s.name }} - {{ s.score }}
+    <button (click)="goToDetails(s.id)">View Details</button>
+  </li>
+</ul>
